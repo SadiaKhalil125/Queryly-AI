@@ -266,6 +266,12 @@ Agent: Analyzes document content and provides context-aware answer
 **To clone repo**
 git clone https://github.com/SadiaKhalil125/Queryly-AI.git
 cd Queryly-AI
+
+pip install -r requirements.txt
+
+after setting api keys
+
+streamlit run user_interface.py
 ```
 
 ## 🤝 Contributing

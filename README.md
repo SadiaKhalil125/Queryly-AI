@@ -264,7 +264,7 @@ Agent: Analyzes document content and provides context-aware answer
 
 ```bash
 **To clone repo**
-git pull https://github.com/SadiaKhalil125/Queryly-AI.git
+git clone https://github.com/SadiaKhalil125/Queryly-AI.git
 cd Queryly-AI
 ```
 

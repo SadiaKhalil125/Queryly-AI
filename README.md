@@ -1,5 +1,7 @@
 # Queryly AI - Intelligent SQL Learning Platform ⚡
 
+**Demo**: https://www.loom.com/share/df02fe13972f46bb924e05a9466ad73c?sid=01123b66-6a10-4b94-a5ab-0766e3e28b2b
+
 ## 🎯 Project Overview
 
 Queryly AI is a comprehensive SQL learning platform that combines multiple AI-powered tools to provide an interactive and intelligent learning experience. The platform features a ReAct agent with 4 specialized tools, a modern Streamlit interface, and MongoDB integration for persistent chat history.
@@ -63,42 +65,6 @@ The ReAct agent serves as the central intelligence hub with **4 specialized tool
   - Direct knowledge-based responses
   - No tool invocation for general SQL questions
   - Domain-specific focus (SQL only)
-
-## 📊 Data Models
-
-### Quiz System Models
-```python
-# Quiz.py - Main quiz container
-class Quiz(BaseModel):
-    questions_count: int = 10
-    questions: List[Question]
-    min_passing_marks: int = 8
-    meta_data: Optional[str] = None
-
-# Question.py - Individual question structure
-class Question(BaseModel):
-    topic: str
-    description: str
-    options: List[Option]
-    correct_option_id: int
-
-# Option.py - Multiple choice options
-class Option(BaseModel):
-    description: str
-```
-
-### User Management Models
-```python
-# User.py - User account information
-class User(BaseModel):
-    name: str = Field(description="Name of user")
-    email: str = Field(description="Email of user")
-    password: str = Field(description="password for user's account")
-
-# QuizGeneratorReq.py - Quiz generation request
-class QuizRequest(BaseModel):
-    topic: str
-```
 
 ## 🎨 User Interface (Streamlit)
 
@@ -295,6 +261,12 @@ Agent: Analyzes document content and provides context-aware answer
 - Input validation
 - Error handling
 - Secure file processing
+
+```bash
+**To clone repo**
+git pull https://github.com/SadiaKhalil125/Queryly-AI.git
+cd Queryly-AI
+```
 
 ## 🤝 Contributing
 
